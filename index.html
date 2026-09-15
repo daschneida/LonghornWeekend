@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Longhorn Weekend — Sept 19–20, 2026</title>
+<meta name="description" content="Gameday plan for Texas vs. UTSA, Saturday September 19, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --orange:#BF5700;
+    --orange-deep:#8F4100;
+    --ink:#26251F;
+    --slate:#5A6670;
+    --paper:#FFFFFF;
+    --limestone:#F1EDE5;
+    --rule:#DCD5C8;
+    --sky:#2E5C6E;
+    --maxw:44rem;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Archivo","Helvetica Neue",Arial,sans-serif;
+    font-size:17px;line-height:1.55;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 1.25rem}
+  a{color:var(--orange-deep);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+
+  .ticket{background:var(--ink);color:#F6F2EA;padding:2.5rem 0 2rem;border-bottom:6px solid var(--orange)}
+  .matchup{
+    font-family:"Fraunces",Georgia,serif;font-weight:800;
+    font-size:clamp(2.6rem,12vw,4.75rem);line-height:.95;
+    letter-spacing:-.02em;margin:0;
+  }
+  .matchup .vs{
+    display:block;font-family:"Archivo",sans-serif;font-weight:400;font-style:italic;
+    font-size:.26em;letter-spacing:.04em;color:#B9AF9E;margin:.45em 0 .3em;
+  }
+  .matchup .opp{color:var(--orange)}
+  .where{margin:1.4rem 0 0;color:#CFC6B6;font-size:.95rem;line-height:1.4;max-width:24rem}
+  .where strong{color:#F6F2EA;font-weight:600}
+  .clock{
+    margin-top:1.75rem;border-top:1px solid #45443C;padding-top:1.1rem;
+    display:flex;gap:1.6rem;font-variant-numeric:tabular-nums;
+  }
+  .clock div{line-height:1}
+  .clock b{display:block;font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:2.1rem;color:#F6F2EA}
+  .clock span{font-size:.72rem;color:#B9AF9E;letter-spacing:.06em}
+  #kicked{font-family:"Fraunces",Georgia,serif;font-size:1.4rem;color:var(--orange);display:none}
+
+  section{padding:2.75rem 0 .5rem}
+  h2{font-family:"Fraunces",Georgia,serif;font-weight:800;font-size:1.85rem;line-height:1.1;letter-spacing:-.01em;margin:0 0 .35rem}
+  .dateline{color:var(--slate);font-size:.95rem;margin:0 0 2rem;padding-bottom:1rem;border-bottom:2px solid var(--ink)}
+
+  ol.run{list-style:none;margin:0;padding:0}
+  ol.run > li{position:relative;padding:0 0 1.9rem 0}
+  .t{font-weight:700;font-size:.95rem;font-variant-numeric:tabular-nums;color:var(--orange-deep);letter-spacing:.01em}
+  h3{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:1.3rem;line-height:1.25;margin:.1rem 0 .3rem}
+  .addr{display:block;font-size:.88rem;color:var(--slate);margin:-.1rem 0 .5rem}
+  ol.run p{margin:.4rem 0}
+  .note{font-size:.92rem;color:var(--slate)}
+
+  @media (min-width:44rem){
+    ol.run{border-left:2px solid var(--rule);margin-left:5.5rem}
+    ol.run > li{padding-left:1.6rem}
+    .t{position:absolute;left:-5.5rem;top:.28rem;width:4.6rem;text-align:right}
+    ol.run > li::before{content:"";position:absolute;left:-6px;top:.55rem;width:10px;height:10px;background:var(--orange);border-radius:50%}
+    ol.run > li.pin::before{background:var(--ink);width:14px;height:14px;left:-8px}
+  }
+
+  .fork{background:var(--limestone);border-left:4px solid var(--orange);padding:1.1rem 1.15rem;margin:.6rem 0 .25rem}
+  .fork h4{font-family:"Fraunces",Georgia,serif;font-size:1.05rem;margin:0 0 .5rem}
+  .fork p{margin:.35rem 0;font-size:.93rem}
+  .fork dl{margin:0;display:grid;gap:.7rem}
+  .fork dt{font-weight:700;font-size:.93rem}
+  .fork dd{margin:.1rem 0 0;font-size:.93rem;color:var(--slate)}
+  .fork .pick{margin:.9rem 0 0;padding-top:.75rem;border-top:1px solid var(--rule);font-size:.93rem}
+  .fork .pick b{color:var(--orange-deep)}
+
+  ul.checks{list-style:none;margin:0;padding:0}
+  ul.checks li{padding:.85rem 0;border-top:1px solid var(--rule);font-size:.95rem}
+  ul.checks li:last-child{border-bottom:1px solid var(--rule)}
+  ul.checks b{display:block;font-weight:700;margin-bottom:.15rem}
+  ul.checks span{color:var(--slate)}
+
+  .watch{background:var(--ink);color:#F6F2EA;padding:2.25rem 0}
+  .watch h2{color:#F6F2EA}
+  .watch .dateline{color:#B9AF9E;border-bottom-color:var(--orange)}
+  .watch dl{margin:0}
+  .watch dt{font-family:"Fraunces",Georgia,serif;font-size:1.15rem;color:var(--orange);margin-top:1.3rem}
+  .watch dd{margin:.2rem 0 0;color:#CFC6B6;font-size:.95rem}
+
+  footer{padding:2.5rem 0 3.5rem;color:var(--slate);font-size:.85rem;line-height:1.5}
+  footer p{margin:.4rem 0}
+
+  @media print{
+    .ticket{background:#fff;color:#000;border-bottom:3px solid #000}
+    .matchup .opp,.t{color:#000}
+    .clock,.watch{background:#fff;color:#000}
+    .watch dt{color:#000}.watch dd{color:#333}
+    a{text-decoration:none;color:#000}
+    section{page-break-inside:avoid}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="ticket">
+  <div class="wrap">
+    <h1 class="matchup">Texas<span class="vs">versus</span><span class="opp">UTSA</span></h1>
+    <p class="where">
+      <strong>Saturday, September 19, 2026 · 7:00 PM</strong><br>
+      Darrell K Royal–Texas Memorial Stadium, Austin<br>
+      SEC Network+
+    </p>
+    <div class="clock" id="clock" aria-live="polite">
+      <div><b id="d">–</b><span>days</span></div>
+      <div><b id="h">–</b><span>hours</span></div>
+      <div><b id="m">–</b><span>minutes</span></div>
+    </div>
+    <p id="kicked">Horns up.</p>
+  </div>
+</header>
+
+<main>
+
+<section class="wrap">
+  <h2>Saturday</h2>
+  <p class="dateline">Two hours and 2.3 miles on foot across campus, then everything after 3:10 belongs to the team. Forecast: 95°F, 20% chance of rain.</p>
+
+  <ol class="run">
+
+    <li>
+      <p class="t">10:00 AM</p>
+      <h3>Drop bags at the hotel</h3>
+      <span class="addr">Hyatt House Austin/Downtown · 901 Neches St</span>
+      <p>Rooms won't be ready — the front desk holds luggage. Keep the car out; you need it for the next two stops only.</p>
+    </li>
+
+    <li>
+      <p class="t">10:15 AM</p>
+      <h3>Texas State Capitol</h3>
+      <span class="addr">1100 Congress Ave · <a href="https://maps.google.com/?q=Texas+Capitol+Austin">map</a></span>
+      <p>Free guided tours leave the South Foyer every 15–30 minutes, no reservation, about 40 minutes. Getting there before 11 means a short security line and a small group.</p>
+      <p>Park in the Capitol Visitors Garage, 1201 San Jacinto, entrances on E 12th and E 13th. The usual two-hours-free rate doesn't hold on football weekends — budget up to $25. It's also a twelve-minute walk from the hotel if you'd rather not move the car yet.</p>
+      <p class="note">Stand dead center under the rotunda and whisper at the wall. It carries all the way across. The dome runs 218 feet up to the Lone Star, and the building is 14 feet taller than the U.S. Capitol.</p>
+    </li>
+
+    <li>
+      <p class="t">11:30 AM</p>
+      <h3>Lunch at Terry Black's Barbecue</h3>
+      <span class="addr">1003 Barton Springs Rd · 10-minute drive · <a href="https://maps.google.com/?q=Terry+Black%27s+Barbecue+Barton+Springs">map</a></span>
+      <p>Pulled early on purpose — the campus walk needs the time. Arriving at 11:30 beats the Saturday line entirely. Cafeteria style, brisket sliced to order in front of you, and it rarely sells out. Order by the pound and share: moist brisket, pork ribs, jalapeño cheddar sausage.</p>
+    </li>
+
+    <li class="pin">
+      <p class="t">12:45 PM</p>
+      <h3>Park the car for the night</h3>
+      <span class="addr">Back at the Hyatt House</span>
+      <p>Last time you touch the car until Sunday. Campus towing runs from midnight Friday, state garages near the stadium are $25–$75 today, and Trinity Street converts to one-way southbound an hour after kickoff.</p>
+    </li>
+
+    <li>
+      <p class="t">1:00 PM</p>
+      <h3>Up to campus</h3>
+      <div class="fork">
+        <h4>How's Grandpa doing?</h4>
+        <dl>
+          <dt>Walk it</dt>
+          <dd>1.3 miles north on Guadalupe, 25–30 minutes, patchy shade, near 95°F — on top of the 2.3 miles the campus route already asks for.</dd>
+          <dt>Ride it</dt>
+          <dd>8–10 minutes, roughly $12–15. Ask for Guadalupe and MLK.</dd>
+        </dl>
+        <p class="pick"><b>Suggestion:</b> ride up, walk down tonight. The campus walk is long enough on its own, and after the game it's cooler and the whole crowd moves together.</p>
+      </div>
+    </li>
+
+    <li>
+      <p class="t">1:05 PM</p>
+      <h3>Guadalupe and MLK — north up the Drag</h3>
+      <p>Ten minutes along the west edge of campus. Not scenic, but it's the Drag, and it sets up the entrance properly: you arrive at the Co-op with the West Mall opening straight across the street.</p>
+      <p class="note">Buy water here. Most campus buildings are locked on a football Saturday.</p>
+    </li>
+
+    <li>
+      <p class="t">1:15 PM</p>
+      <h3>University Co-op</h3>
+      <span class="addr">2246 Guadalupe St · <a href="https://maps.google.com/?q=University+Co-op+Austin">map</a></span>
+      <p>Twenty minutes. Far better selection and prices than the stadium, and he wears it for the rest of the day.</p>
+      <div class="fork">
+        <h4>Buy only what you can wear out of the store</h4>
+        <p>A Co-op shopping bag can't come into the stadium — non-clear bags over 4.5″ × 6.5″ are refused and there's no bag check. You aren't going back to the car either. Shirts and caps go on now; the sweatshirt and the coffee mug wait for the website.</p>
+      </div>
+    </li>
+
+    <li>
+      <p class="t">1:40 PM</p>
+      <h3>West Mall to the Main Building</h3>
+      <p>Cross Guadalupe and walk straight in. The West Mall runs level and dead east to the Tower, so it's in front of you the whole way — the best arrival on campus and the one most visitors never take.</p>
+      <p>At the base, look straight up. Three hundred and seven feet reads completely differently from underneath than it does in a photograph. Step into the Main Building lobby for the vaulted ceiling and the cool air.</p>
+      <p class="note">Observation deck tours are currently suspended.</p>
+    </li>
+
+    <li>
+      <p class="t">2:00 PM</p>
+      <h3>South Mall and Littlefield Fountain</h3>
+      <p>Walk down the mall with the Six Pack flanking you — Parlin, Calhoun and Rainey on one side, Batts, Benedict and Mezes on the other. At the bottom, turn around. That's the photograph: the 1933 fountain with the bronze horses coming out of the water, the ship's prow, and the Tower standing behind it at the top of the rise.</p>
+      <p>Twenty minutes, and it's worth every one of them.</p>
+    </li>
+
+    <li>
+      <p class="t">2:20 PM</p>
+      <h3>Jester Center</h3>
+      <span class="addr">201 E 21st St · straight east on 21st</span>
+      <p>Ten minutes. Point at a window and tell him which one was yours.</p>
+    </li>
+
+    <li>
+      <p class="t">2:35 PM</p>
+      <h3>Gregory Gym</h3>
+      <p>Across Speedway from Jester. The 1930 building with the arcaded front is still the original — everything behind it got added later.</p>
+    </li>
+
+    <li>
+      <p class="t">2:45 PM</p>
+      <h3>North on the Speedway Mall</h3>
+      <div class="fork">
+        <h4>This isn't the Speedway you remember</h4>
+        <p>It was a service road when you lived in Jester — delivery trucks, cars, students dodging both. Between 2016 and 2018 UT spent $36 million turning it into a thirty-six-foot pedestrian corridor running exactly this line, Jester Circle up to Dean Keeton. Golden sand-molded brick laid in herringbone, and they engineered the soil under the paving specifically to keep the mature live oaks alive. Which is why this half mile has shade when the rest of campus doesn't.</p>
+      </div>
+      <p>North from Gregory you pass the PCL, then Welch, and come out at Dean Keeton between the physics, math and astronomy building on one side and the Cockrell School's engineering complex on the other.</p>
+      <p class="note">Your route ends at the engineering corner of campus by accident. Tell him that's not an accident of interest — the university's center of gravity moved east off the Tower decades ago, and this corridor is what that looks like built.</p>
+    </li>
+
+    <li class="pin">
+      <p class="t">3:00 PM</p>
+      <h3>East on Dean Keeton to San Jacinto</h3>
+      <p>Six minutes, and the burnt orange thickens the whole way. Leave the Speedway Mall on time — this is the one hard deadline of the day.</p>
+    </li>
+
+    <li>
+      <p class="t">3:10 PM</p>
+      <h3>Onto Bevo Blvd, heading south</h3>
+      <p>Dean Keeton puts you in at the north end, so you'll pass Smokey's Midway on DeLoss Dodds Way first. Work south along San Jacinto toward Gate 1, where the crowd gathers for Bevo's arrival. It's eight to ten minutes through thick people — and it's the right direction anyway, since Big Bertha's Bazaar is down at that end.</p>
+      <p class="note">If the crowd is impossible, stop where you are. The parade comes up San Jacinto; any spot on the rail works.</p>
+    </li>
+
+    <li class="pin">
+      <p class="t">3:30 PM</p>
+      <h3>Bevo Parade</h3>
+      <span class="addr">San Jacinto Blvd, near Gate 1</span>
+      <p>Be in place by 3:10 for a decent spot along the rail. Bevo arrives with the cheerleaders and members of the band. He is a genuinely enormous animal and the photos never quite convey it.</p>
+    </li>
+
+    <li>
+      <p class="t">4:15 PM</p>
+      <h3>Stadium Stampede</h3>
+      <p>The team walks in through the crowd, roughly 45 minutes after the parade. Same stretch of San Jacinto — stay put and you'll catch both.</p>
+    </li>
+
+    <li>
+      <p class="t">4:30 PM</p>
+      <h3>Big Bertha's Bazaar</h3>
+      <span class="addr">Moody Center plaza</span>
+      <div class="fork">
+        <h4>This one's for the band kid</h4>
+        <p>Big Bertha lives here before the march — the Longhorn Band's bass drum, around eight feet across, old enough to have its own history and heavy enough to need a crew to move it. There's an official photo op with her on the plaza.</p>
+        <p>Get the picture now. In ninety minutes she'll be at the front of the march and surrounded four deep.</p>
+      </div>
+    </li>
+
+    <li>
+      <p class="t">5:00 PM</p>
+      <h3>Dinner is the food trucks</h3>
+      <span class="addr">Hook 'Em Hangout, Winship Circle · plus Smokey's Midway and Longhorn City Limits</span>
+      <p>There's no sit-down dinner that works around a 7 PM kick, so don't try. Ten-plus rotating Austin food trucks, shaded seating, carnival games on the north side, and a free concert on the LBJ Lawn. Eat now — you're not coming back out.</p>
+    </li>
+
+    <li class="pin">
+      <p class="t">5:30 PM</p>
+      <h3>The Longhorn Band marches to the stadium</h3>
+      <p>Big Bertha leads it. Full uniform, drum cadence, fans lining the route the whole way in. Find a spot partway along the route rather than at the stadium end — the crush at the doors is where you see the least.</p>
+      <p>If he plays what they're playing, he'll recognize <em>Texas Fight</em> and <em>March Grandioso</em> before they're halfway past.</p>
+    </li>
+
+    <li>
+      <p class="t">6:15 PM</p>
+      <h3>Into the stadium</h3>
+      <p>Enter at the gate printed on your ticket. <strong>No re-entry</strong> — once you're through, you're in for the night.</p>
+    </li>
+
+    <li>
+      <p class="t">6:40 PM</p>
+      <h3>In your seats for the pregame show</h3>
+      <p>The band takes the field about twenty minutes out and forms the Texas logo. For a kid who marches, this is the part worth being early for — more than kickoff itself.</p>
+    </li>
+
+    <li>
+      <p class="t">7:00 PM</p>
+      <h3>Kickoff</h3>
+      <p>Texas comes in off a 24–23 comeback win over No. 1 Ohio State the week before. This place will be loud.</p>
+    </li>
+
+    <li>
+      <p class="t">10:30 PM</p>
+      <h3>Stay to the end</h3>
+      <p>Win or lose, nobody leaves before the team faces the student section and everyone sings <em>The Eyes of Texas</em> with horns up. If Texas wins, the Tower turns burnt orange.</p>
+    </li>
+
+    <li>
+      <p class="t">10:45 PM</p>
+      <h3>Walk home, or one more stop</h3>
+      <span class="addr">Kerbey Lane Cafe · 2606 Guadalupe St · open till midnight</span>
+      <p>A mile and a half back to the hotel, downhill, the whole crowd moving your direction and the Tower lit behind you. Or detour to Kerbey Lane for queso and pancakes at eleven o'clock surrounded by students — which is a college town at full volume, and exactly what a fourteen-year-old should see.</p>
+    </li>
+
+  </ol>
+</section>
+
+<section class="wrap">
+  <h2>Before you leave the hotel</h2>
+  <p class="dateline">The five things that actually go wrong.</p>
+  <ul class="checks">
+    <li><b>Clear bag rule, strictly enforced</b><span>Non-clear bags can't exceed 4.5″ × 6.5″. Clear bags can't exceed 12″ × 6″ × 12″. There is no bag check at the stadium — wrong bag means walking it back.</span></li>
+    <li><b>Assume no outside drinks</b><span>Sealed and empty bottles are both on the prohibited list. Hydrate hard before the gate and buy inside.</span></li>
+    <li><b>No re-entry</b><span>Everything outside the stadium has to happen before 6:15.</span></li>
+    <li><b>Dress for 95°F</b><span>Hats and sunscreen. Still high 80s at kickoff, low 80s by the fourth quarter. You're outside and walking from 1:05 to 6:15. The Main Building lobby and the live oaks over the Speedway Mall are the only real shade on the route — and buy water on the Drag, because campus buildings are locked on a game Saturday.</span></li>
+    <li><b>Confirm the pregame times Thursday</b><span>Parade, Stampede and band march times post at texaslonghorns.com/gameday during the week and can shift by fifteen or twenty minutes.</span></li>
+  </ul>
+</section>
+
+</main>
+
+<section class="watch">
+  <div class="wrap">
+    <h2>Three things to watch for</h2>
+    <p class="dateline">Point these out before they happen.</p>
+    <dl>
+      <dt>Smokey the Cannon</dt>
+      <dd>Fires after every Texas score. Much louder than he expects.</dd>
+      <dt>Big Bertha</dt>
+      <dd>He'll have already met her at the Bazaar. Watch for her leading the band out onto the field.</dd>
+      <dt>The Eyes of Texas</dt>
+      <dd>Sung at the end with the hand sign raised. Everyone stays. Nobody walks out.</dd>
+    </dl>
+  </div>
+</section>
+
+<main>
+<section class="wrap">
+  <h2>Sunday</h2>
+  <p class="dateline">Brunch, one overlook, then east. The route out runs north, so the morning is built to end pointed that way.</p>
+
+  <ol class="run">
+    <li>
+      <p class="t">8:45 AM</p>
+      <h3>Load the car and check out</h3>
+      <p>Do this first. It matters for the 10:45 stop.</p>
+    </li>
+
+    <li>
+      <p class="t">9:15 AM</p>
+      <h3>Brunch, pick one</h3>
+      <div class="fork">
+        <h4>Josephine House · 1601 Waterston Ave · opens 9</h4>
+        <p>A small white cottage in Clarksville with a patio under the oaks. Huevos rancheros, house sourdough with jam, blueberry muffins worth ordering separately. Sits directly on the line between the hotel and Mount Bonnell, which is why it's the pick.</p>
+      </div>
+      <div class="fork">
+        <h4>Moonshine Grill · 303 Red River · brunch 9–2</h4>
+        <p>Seven-minute walk from the hotel in an 1850s stone building, one of the oldest structures in Austin. Big Southern brunch buffet — chicken and waffles, chile relleno, cathead biscuits. Best choice if nobody wants to drive before coffee.</p>
+      </div>
+      <div class="fork">
+        <h4>Hillside Farmacy · 1209 E 11th · 9–3</h4>
+        <p>A restored 1950s pharmacy on the east side with the original fixtures still in. Quieter, a little more grown-up, and close to the hotel.</p>
+      </div>
+      <p class="note">Sunday is also Austin Museum Day — free admission at 39 museums including the LBJ Library, the Blanton and the Bullock. Only relevant if you'd rather push the drive to mid-afternoon.</p>
+    </li>
+
+    <li class="pin">
+      <p class="t">10:45 AM</p>
+      <h3>Mount Bonnell</h3>
+      <span class="addr">3800 Mt Bonnell Rd · free · <a href="https://maps.google.com/?q=Covert+Park+at+Mount+Bonnell">map</a></span>
+      <p>The highest point in the city at 775 feet, and a picnic spot since the 1850s. It's 106 stone stairs to the pavilion, about 190 feet of climb — short but genuinely a climb, and there's no shade or restroom at the top. Going at eleven rather than two makes a real difference in September.</p>
+      <p>From the summit: Lake Austin directly below, the downtown skyline southeast, Hill Country west.</p>
+      <div class="fork">
+        <h4>Read this before you park</h4>
+        <p>Austin police have flagged the Mount Bonnell lot as a hot spot for vehicle break-ins. Your car will be packed for a 1,700-mile drive. Everything visible goes in the trunk before you arrive, not in the lot, and wallets and phones come up the stairs with you.</p>
+      </div>
+    </li>
+
+    <li>
+      <p class="t">11:45 AM</p>
+      <h3>Pointed east</h3>
+      <p>North on Mt Bonnell Road, right on FM 2222, and that runs you straight to I-35 northbound without doubling back through downtown. The detour costs about forty minutes total and it's the best last look at Texas you'll get from a parking lot.</p>
+    </li>
+  </ol>
+</section>
+</main>
+
+<footer class="wrap">
+  <p>Details verified the week of September 15, 2026. Pregame schedules and the Longhorn City Limits lineup are confirmed at texaslonghorns.com/gameday a few days out — worth a last check Thursday night.</p>
+  <p>Hook 'em.</p>
+</footer>
+
+<script>
+(function(){
+  var kick = new Date("2026-09-19T19:00:00-05:00").getTime();
+  var d=document.getElementById("d"),h=document.getElementById("h"),m=document.getElementById("m");
+  function tick(){
+    var left = kick - Date.now();
+    if(left<=0){
+      document.getElementById("clock").style.display="none";
+      document.getElementById("kicked").style.display="block";
+      return;
+    }
+    var mins=Math.floor(left/60000);
+    d.textContent=Math.floor(mins/1440);
+    h.textContent=Math.floor(mins%1440/60);
+    m.textContent=mins%60;
+  }
+  tick();
+  setInterval(tick,30000);
+})();
+</script>
+
+</body>
+</html>
