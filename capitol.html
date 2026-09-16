@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walking the Texas Capitol</title>
+<meta name="description" content="A short self-guided walkthrough of the Texas State Capitol.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --orange:#BF5700;--orange-deep:#8F4100;--ink:#26251F;--slate:#5A6670;
+    --paper:#FFFFFF;--limestone:#F1EDE5;--rule:#DCD5C8;--sky:#2E5C6E;--maxw:42rem;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Archivo","Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.6}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 1.25rem}
+  a{color:var(--orange-deep);text-underline-offset:2px}
+  a:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+
+  header.top{background:var(--ink);color:#F6F2EA;padding:2.5rem 0 2rem;border-bottom:6px solid var(--orange)}
+  h1{font-family:"Fraunces",Georgia,serif;font-weight:800;
+    font-size:clamp(2.1rem,8vw,3.2rem);line-height:1;letter-spacing:-.02em;margin:0}
+  h1 span{display:block;color:var(--orange)}
+  .sub{margin:1.1rem 0 0;color:#CFC6B6;font-size:.95rem;max-width:26rem}
+  .back{display:inline-block;margin-top:1.3rem;color:#B9AF9E;font-size:.85rem}
+
+  .intro{padding:2.25rem 0 .5rem;font-size:1.02rem}
+  .intro p{margin:0 0 .9rem}
+
+  ol.stops{list-style:none;margin:0;padding:2rem 0 0;counter-reset:s}
+  ol.stops > li{counter-increment:s;padding:0 0 2.4rem;position:relative}
+  ol.stops > li::before{
+    content:counter(s);
+    font-family:"Fraunces",Georgia,serif;font-weight:800;font-size:.95rem;
+    color:var(--orange);letter-spacing:.04em;display:block;margin-bottom:.15rem;
+  }
+  h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:1.45rem;
+    line-height:1.2;margin:0 0 .15rem}
+  .loc{display:block;font-size:.85rem;color:var(--slate);margin:0 0 .7rem}
+  ol.stops p{margin:.55rem 0}
+  .tag{
+    display:block;font-family:"Fraunces",Georgia,serif;font-size:1rem;
+    color:var(--orange-deep);margin:1.1rem 0 .1rem;
+  }
+  .box{background:var(--limestone);border-left:4px solid var(--orange);
+    padding:1rem 1.1rem;margin:1rem 0 0;font-size:.95rem}
+  .box p{margin:.35rem 0}
+  .box p:first-child{margin-top:0}
+
+  .plan{margin:2rem 0 .5rem;padding-top:1.75rem;border-top:2px solid var(--ink)}
+  .planh{font-family:"Fraunces",Georgia,serif;font-weight:800;font-size:1.3rem;margin:0}
+  .plannote{margin:.15rem 0 1.2rem;color:var(--slate);font-size:.9rem}
+  .plan svg{width:100%;height:auto;display:block}
+  footer{padding:1.5rem 0 3.5rem;color:var(--slate);font-size:.85rem;
+    border-top:2px solid var(--ink);margin-top:1rem}
+  footer p{margin:.4rem 0}
+
+  @media print{
+    header.top{background:#fff;color:#000;border-bottom:3px solid #000}
+    h1 span,.tag,ol.stops>li::before{color:#000}
+    .back{display:none}
+    a{color:#000;text-decoration:none}
+    ol.stops>li{page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <h1>Walking the<span>Texas Capitol</span></h1>
+    <p class="sub">Seven stops, about forty minutes, entering from the south. Self-guided — grab the free brochure at the north entry or in Room 1S.2 if you want a floor plan too.</p>
+    <a class="back" href="index.html">&larr; back to the itinerary</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section class="intro">
+  <p>Before anything else, the thing to know: <strong>Texas did not pay for this building with money.</strong> The Constitution of 1876 set aside three million acres of Panhandle land, and in 1882 the state traded all of it to a syndicate of Chicago businessmen — the Farwell brothers, Abner Taylor, Amos Babcock — in exchange for a capitol.</p>
+  <p>They took the land and turned it into the XIT Ranch, at its peak the largest fenced ranch in the world. So the building you're standing in was bought with the Texas Panhandle, and the ranch that made it famous existed only because four men in Illinois needed somewhere to put their payment.</p>
+</section>
+
+
+<section class="plan">
+  <h2 class="planh">The route, in plan</h2>
+  <p class="plannote">North is up. You come in at the bottom.</p>
+  <svg viewBox="0 0 560 660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schematic floor plan of the Texas Capitol showing seven numbered stops">
+    <g font-family="Archivo, Helvetica, Arial, sans-serif">
+
+      <circle cx="270" cy="82" r="44" fill="none" stroke="#B4AB99" stroke-width="2" stroke-dasharray="5 5"/>
+      <text x="270" y="130" text-anchor="middle" font-size="9.5" fill="#9A9382">underground, north side</text>
+
+      <path d="M222,170 L318,170 L318,280 L488,280 L488,370 L318,370 L318,482 L222,482 L222,370 L52,370 L52,280 L222,280 Z"
+            fill="#F1EDE5" stroke="#B4AB99" stroke-width="2"/>
+      <circle cx="270" cy="325" r="48" fill="#FFFFFF" stroke="#B4AB99" stroke-width="2"/>
+
+      <rect x="230" y="482" width="80" height="8" fill="#B4AB99"/>
+      <rect x="236" y="494" width="68" height="8" fill="#C5BCA9"/>
+      <line x1="270" y1="508" x2="270" y2="572" stroke="#C5BCA9" stroke-width="15" stroke-linecap="round"/>
+
+      <text x="403" y="331" text-anchor="middle" font-size="9.5" letter-spacing="1.4" fill="#9A9382">EAST WING</text>
+      <text x="137" y="331" text-anchor="middle" font-size="9.5" letter-spacing="1.4" fill="#9A9382">WEST WING</text>
+
+      <text x="522" y="42" text-anchor="middle" font-size="11" font-weight="700" fill="#9A9382">N</text>
+      <path d="M522,48 L522,72 M522,48 L517,57 M522,48 L527,57" stroke="#9A9382" stroke-width="1.6" fill="none"/>
+
+      <g fill="#BF5700">
+        <circle cx="270" cy="566" r="13"/><circle cx="270" cy="450" r="13"/>
+        <circle cx="270" cy="325" r="13"/><circle cx="270" cy="277" r="13"/>
+        <circle cx="403" cy="325" r="13"/><circle cx="137" cy="325" r="13"/>
+        <circle cx="270" cy="82" r="13"/>
+      </g>
+      <g fill="#FFFFFF" font-size="12.5" font-weight="700" text-anchor="middle">
+        <text x="270" y="571">1</text><text x="270" y="455">2</text>
+        <text x="270" y="330">3</text><text x="270" y="282">4</text>
+        <text x="403" y="330">5</text><text x="137" y="330">6</text>
+        <text x="270" y="87">7</text>
+      </g>
+
+      <g font-size="12" fill="#26251F">
+        <text x="291" y="563">South approach</text>
+        <text x="291" y="447">South Foyer</text>
+        <text x="291" y="321">Rotunda floor</text>
+        <text x="291" y="273">The portraits</text>
+        <text x="422" y="321">Senate Chamber</text>
+        <text x="118" y="321" text-anchor="end">House Chamber</text>
+        <text x="291" y="78">Open Air Rotunda</text>
+      </g>
+      <g font-size="10.5" fill="#5A6670">
+        <text x="291" y="578">on the Great Walk, before you go in</text>
+        <text x="291" y="462">first floor, through security</text>
+        <text x="291" y="336">stand on the star, look up</text>
+        <text x="291" y="288">newest at the bottom, oldest on four</text>
+        <text x="422" y="336">second floor, east</text>
+        <text x="118" y="336" text-anchor="end">second floor, west</text>
+        <text x="291" y="93">out the north door, look down</text>
+      </g>
+
+    </g>
+  </svg>
+</section>
+
+<ol class="stops">
+
+  <li>
+    <h2>The south approach</h2>
+    <span class="loc">Outside, on the Great Walk, before you go in</span>
+    <p>Stop at the bottom and look up before you climb. The building runs 308 feet to the tip of the statue on the dome, which puts it about fourteen feet above the U.S. Capitol in Washington. That was not an accident of engineering.</p>
+    <span class="tag">The story</span>
+    <p>This wasn't supposed to be red. Elijah Myers of Detroit won the design competition in 1880 — eleven entries, a $1,700 prize — and specified native limestone. The Austin limestone turned out to be full of iron that discolored on contact with air. The owners of Granite Mountain up in Burnet County offered their sunset red granite for free, and the state took the deal.</p>
+    <p>There was a catch. Granite is far harder than limestone, and Myers had to go back and strip the elaborate carving out of his own design because nobody could cut it economically. The building is plainer than the man who drew it wanted.</p>
+    <span class="tag">The fact</span>
+    <p>They had to build a railroad to get the stone here — a narrow-gauge line laid from Marble Falls to Austin for the sole purpose of hauling granite. It's gone now. So is the XIT.</p>
+  </li>
+
+  <li>
+    <h2>The South Foyer</h2>
+    <span class="loc">Straight through security, first floor</span>
+    <p>Look down first. The crushed-marble terrazzo was laid in 1936 for the Texas Centennial and marks twelve battles fought on what is now Texas soil — across the Texas Revolution, the Mexican-American War, and the Civil War.</p>
+    <p>Then look up at the two white marble figures flanking the doorway into the rotunda: Sam Houston on one side, Stephen F. Austin on the other. Both were carved in 1901 by Elisabet Ney, a German-born sculptor who moved to Texas and became, improbably, the person who fixed what the state's founders look like in the public imagination.</p>
+    <span class="tag">The story</span>
+    <p>On the east and west walls hang two Huddle paintings, including <em>The Surrender of Santa Anna</em>. Note who's lying under the tree: Sam Houston, wounded, receiving the surrender on his back. He took a musket ball through the ankle at San Jacinto and the painting refuses to tidy that up.</p>
+  </li>
+
+  <li>
+    <h2>The Rotunda floor</h2>
+    <span class="loc">Dead center, first floor</span>
+    <p>Stand on the star and look straight up. The interior dome is 218 feet above you, and the star at the top measures eight feet point to point — which should tell you how badly your eye is being fooled about the distance.</p>
+    <p>Under your feet: the seals of the six sovereign nations that have governed Texas. Spain, France, Mexico, the Republic, the Confederacy, the United States.</p>
+    <span class="tag">The fact</span>
+    <p>This floor is not original. The rotunda first had encaustic tile around a hexagonal panel of glass block at the center, which let daylight down into the floor below. The terrazzo replaced it in 1936. During the 1990s restoration they rebuilt a replica of the glass-block panel, and you can see it from the ground floor directly underneath — worth the detour down one level.</p>
+    <span class="tag">Try this</span>
+    <p>The rotunda is a whispering gallery. Put two people on opposite sides of the circle, face the wall, and talk quietly. It carries. It also means every conversation held here for 138 years has been overheard by someone.</p>
+  </li>
+
+  <li>
+    <h2>The portraits, going up</h2>
+    <span class="loc">Rotunda walls, all four floors</span>
+    <p>Every president of the Republic and every governor of the state hangs on these walls, and the arrangement is the interesting part: the most recent are on the first floor, the oldest on the fourth.</p>
+    <span class="tag">The fact</span>
+    <p>Which means the wall is a conveyor belt. Each new governor goes in at the bottom, and everyone already up there gets moved — slowly, over decades — further from the ground and further from anyone's eye level. You can stand in one spot and watch a century and a half of Texas politics receding upward.</p>
+  </li>
+
+  <li>
+    <h2>The Senate Chamber</h2>
+    <span class="loc">Second floor — follow the signs</span>
+    <p>The walnut desks are the originals, bought in 1888 for the Lieutenant Governor, the Secretary of the Senate, and thirty-one senators. Behind the rostrum hangs a portrait of Stephen F. Austin painted around 1836, while he was still alive.</p>
+    <p>The west side of the room is anchored by two enormous McArdle paintings: <em>Dawn at the Alamo</em>, over eight feet by thirteen, and <em>Battle of San Jacinto</em>, nine by fifteen.</p>
+    <span class="tag">The story</span>
+    <p>McArdle painted <em>Dawn at the Alamo</em> twice. The first version burned in the 1881 fire that destroyed the old limestone Capitol. He started over and finished the second one twenty-four years later, in 1905.</p>
+    <p>And for research, he wrote letters to the participants — including, in 1874, Santa Anna himself. The general wrote back. Those letters are in the state archives.</p>
+  </li>
+
+  <li>
+    <h2>The House Chamber</h2>
+    <span class="loc">Second floor, opposite wing</span>
+    <p>The largest room in the building, and the one artifact to find is not a painting.</p>
+    <span class="tag">The fact</span>
+    <p>Behind the Speaker's rostrum hangs the flag carried at the Battle of San Jacinto in 1836 — the only textile in the Capitol's entire historical collection. Everything else in this building is stone, wood, bronze, or oil on canvas.</p>
+    <span class="tag">The catch</span>
+    <p>What you'll see is a copy. The Legislature meets in odd-numbered years, and when it's out of session the original comes down and a reproduction goes up so the real one can stay in darkness under drapery. September 2026 is out of session.</p>
+    <p>So the flag that was actually on the field that afternoon is a few feet away, in the dark, being kept alive. Which is arguably the better thing to tell a fourteen-year-old.</p>
+  </li>
+
+  <li>
+    <h2>The Open Air Rotunda</h2>
+    <span class="loc">North side, outside and below grade — five minutes, and most visitors miss it</span>
+    <p>Walk out the north entrance and look down into the sunken courtyard. Below you is the Capitol Extension: 667,000 square feet of offices and hearing rooms on four levels, all of it underground, finished in January 1993.</p>
+    <span class="tag">The story</span>
+    <p>In 1983 an electrical fire tore through the east wing and killed a man. That fire is why this exists. The state had outgrown the building decades earlier and had no way to add to it without ruining it, so the restoration that followed the fire took the only direction left — down. Restoration and extension together ran about $200 million, and the rebuilt Capitol was rededicated on San Jacinto Day, 1995.</p>
+    <span class="tag">The detail worth walking over for</span>
+    <p>The Open Air Rotunda is exactly sixty feet across, the same diameter as the rotunda you were standing in upstairs, and its floor is a mirror image of that dome's ceiling — bronze letters spelling TEXAS around a central star.</p>
+    <p>That star is also the drain. It's an eight-story architectural quotation doing double duty as storm-water management, and it is the single most satisfying thing in the building.</p>
+  </li>
+
+</ol>
+
+<footer>
+  <p>The Goddess of Liberty on the dome is not the original. She came down by helicopter in 1985, and a replica went up in June 1986. The real one — zinc and iron, sixteen feet, two thousand pounds — is at the Bullock Museum three blocks north, if you'd rather see her at eye level than at 308 feet.</p>
+  <p><a href="index.html">&larr; back to the itinerary</a></p>
+</footer>
+
+</main>
+</body>
+</html>
