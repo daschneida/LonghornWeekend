@@ -95,6 +95,8 @@
   .watch dt{font-family:"Fraunces",Georgia,serif;font-size:1.15rem;color:var(--orange);margin-top:1.3rem}
   .watch dd{margin:.2rem 0 0;color:#CFC6B6;font-size:.95rem}
 
+  .overview svg{width:100%;height:auto;display:block;margin-bottom:.5rem}
+  .overview{padding-bottom:1rem}
   footer{padding:2.5rem 0 3.5rem;color:var(--slate);font-size:.85rem;line-height:1.5}
   footer p{margin:.4rem 0}
 
@@ -129,6 +131,93 @@
 </header>
 
 <main>
+
+
+<section class="wrap overview">
+  <h2>The weekend at a glance</h2>
+  <p class="dateline">Solid line is on foot. Dashed is by car. Everything north of the Capitol happens between 1:05 and 3:10.</p>
+  <svg viewBox="0 0 530 772" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of the weekend's waypoints across downtown Austin and the UT campus">
+   <g font-family="Archivo, Helvetica, Arial, sans-serif">
+
+    <rect x="296" y="40" width="200" height="182" rx="7" fill="#F1EDE5"/>
+    <text x="488" y="34" text-anchor="end" font-size="9.5" letter-spacing="1.6" fill="#A79E8B">UT CAMPUS</text>
+    <text x="396" y="300" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#A79E8B">DOWNTOWN</text>
+
+    <path d="M20,508 C 90,514 165,530 234,543 C 300,556 330,568 342,587 C 380,626 415,652 449,690"
+          fill="none" stroke="#CBDAE0" stroke-width="12" stroke-linecap="round"/>
+    <text x="150" y="562" font-size="10" fill="#8FA6B0" font-style="italic">Lady Bird Lake</text>
+
+    <path d="M406,431 L351,345" stroke="#5A6670" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+    <path d="M351,345 L130,610" stroke="#5A6670" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+    <path d="M406,431 L329,233" stroke="#5A6670" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+
+    <path d="M329,233 L328,141 L366,141 L363,181 L411,197 L403,185 L411,73 L472,73 L472,188"
+          fill="none" stroke="#BF5700" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M472,188 L334,52" stroke="#BF5700" stroke-width="2" stroke-dasharray="2 6"
+          stroke-linecap="round" fill="none" opacity=".65"/>
+
+    <path d="M66,246 L46,150" stroke="#5A6670" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+    <path d="M46,150 L41,160 M46,150 L52,159" stroke="#5A6670" stroke-width="2" fill="none"/>
+    <text x="24" y="132" font-size="11.5" fill="#26251F">Mt Bonnell</text>
+    <text x="24" y="146" font-size="10" fill="#5A6670">4 mi NW · Sunday</text>
+
+    <g fill="#BF5700">
+      <circle cx="406" cy="431" r="12"/><circle cx="351" cy="345" r="12"/>
+      <circle cx="130" cy="610" r="12"/><circle cx="328" cy="141" r="12"/>
+      <circle cx="366" cy="141" r="12"/><circle cx="363" cy="181" r="12"/>
+      <circle cx="408" cy="193" r="12"/><circle cx="411" cy="73" r="12"/>
+      <circle cx="472" cy="188" r="12"/>
+    </g>
+    <circle cx="334" cy="52" r="11" fill="#FFFFFF" stroke="#BF5700" stroke-width="2.5"/>
+    <circle cx="81" cy="268" r="11" fill="#FFFFFF" stroke="#BF5700" stroke-width="2.5"/>
+
+    <g fill="#FFFFFF" font-size="11.5" font-weight="700" text-anchor="middle">
+      <text x="406" y="435">1</text><text x="351" y="349">2</text><text x="130" y="614">3</text>
+      <text x="328" y="145">4</text><text x="366" y="145">5</text><text x="363" y="185">6</text>
+      <text x="408" y="197">7</text><text x="411" y="77">8</text><text x="472" y="192">9</text>
+    </g>
+
+    <g font-size="11.5" fill="#26251F">
+      <text x="424" y="428">Hyatt House</text>
+      <text x="333" y="342" text-anchor="end">Capitol</text>
+      <text x="148" y="607">Terry Black’s</text>
+      <text x="310" y="138" text-anchor="end">Co-op &amp; the Drag</text>
+      <text x="384" y="138">UT Tower</text>
+      <text x="345" y="178" text-anchor="end">Littlefield</text>
+      <text x="392" y="216" text-anchor="end">Jester · Gregory</text>
+      <text x="393" y="70" text-anchor="end">Speedway Mall</text>
+      <text x="472" y="216" text-anchor="middle" font-size="10.5">DKR Stadium</text>
+      <text x="352" y="49">Kerbey Lane</text>
+      <text x="99" y="265">Josephine House</text>
+    </g>
+    <g font-size="10" fill="#5A6670">
+      <text x="424" y="442">10:00 · base</text>
+      <text x="333" y="356" text-anchor="end">10:15</text>
+      <text x="148" y="621">11:30</text>
+      <text x="310" y="152" text-anchor="end">1:15</text>
+      <text x="384" y="152">1:40</text>
+      <text x="345" y="192" text-anchor="end">2:00</text>
+      <text x="392" y="230" text-anchor="end">2:20</text>
+      <text x="393" y="84" text-anchor="end">2:45</text>
+      <text x="472" y="230" text-anchor="middle">3:10 · Bevo Blvd</text>
+      <text x="352" y="62">after the game</text>
+      <text x="99" y="279">Sunday brunch</text>
+    </g>
+
+    <g transform="translate(20,706)">
+      <line x1="0" y1="0" x2="26" y2="0" stroke="#BF5700" stroke-width="3.5" stroke-linecap="round"/>
+      <text x="34" y="4" font-size="10.5" fill="#5A6670">on foot</text>
+      <line x1="100" y1="0" x2="126" y2="0" stroke="#5A6670" stroke-width="2" stroke-dasharray="6 5"/>
+      <text x="134" y="4" font-size="10.5" fill="#5A6670">by car</text>
+      <line x1="196" y1="0" x2="222" y2="0" stroke="#BF5700" stroke-width="2" stroke-dasharray="2 6" opacity=".65"/>
+      <text x="230" y="4" font-size="10.5" fill="#5A6670">after the game</text>
+    </g>
+    <text x="20" y="736" font-size="10.5" fill="#5A6670">The car sits at the hotel from 12:45 Saturday until Sunday morning.</text>
+
+    <text x="506" y="34" text-anchor="end" font-size="11" font-weight="700" fill="#A79E8B" opacity="0">N</text>
+   </g>
+  </svg>
+</section>
 
 <section class="wrap">
   <h2>Saturday</h2>
